@@ -11,3 +11,5 @@ Cavaleiros:
 
 Duque:
 	Davi
+
+O que vamos fazer:
