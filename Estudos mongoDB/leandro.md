@@ -4,7 +4,7 @@ show dbs: Mostra os bancos de dados existentes na sua máquina.
 
 use nome-do-Bancodedados: Acessa o banco de dados e se o banco de dados não existir ele cria.
 
-show collections: Mostra as collections que existem no banco dedados.
+show collections: Mostra as collections que existem no banco de dados.
 
 db.createCollection('qualquer-nome'): Cria uma collection.
 
