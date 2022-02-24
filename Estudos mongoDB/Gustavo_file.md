@@ -30,13 +30,13 @@ Obs: Para criar uma collection, digite `db.createCollection('qualquer-nome')`
 
     `db.dropDatabase()`
 
-## Find
+# Find
 
 * Para buscar um documento dentro de uma collection, digite `db.clube.find({"nome":"São Paulo"})` 
 
 Obs: Utilizei um exemplo nesse comando, onde o "clube" seria o nomde da tabela
 
-## Edit
+# Edit
 
 * Para editar um documento, usamos o código `db.clube.update({nome:"São Paulo"},{set:{nome: "Santos"}})`
 
