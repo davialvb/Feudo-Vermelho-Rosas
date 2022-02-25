@@ -44,16 +44,16 @@
 
 
 
-####Dados no vscode.
-* db.nome_da_collection.insertOne({ <para definir dados mais organizados utilizando o vscode ou similar>
-	nome: "Jorge",                <após copiar tudo, basta clicar com o botão direito do mouse no mongodb para colar>
-	idade: 70,
-	personalidade: "calmo",
-	hobbies: ["Dar comida para os pombos", "fazer caminhada", "ler jornal"],
-	caracteristicas: {
+#### Dados no vscode.
+* db.nome_da_collection.insertOne({ <para definir dados mais organizados utilizando o vscode ou similar> </br>
+	nome: "Jorge",                  <após copiar tudo, basta clicar com o botão direito do mouse no mongodb para colar> </br>
+	idade: 70, </br>
+	personalidade: "calmo", </br>
+	hobbies: ["Dar comida para os pombos", "fazer caminhada", "ler jornal"], </br>
+	caracteristicas: { </br>
 		cabelo: "branco",
 		fisico: "magro",
 		altura: 1.70,
 		cor_dos_olhos: "verdes"
-	}
+	} </br>
 })
