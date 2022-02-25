@@ -1,5 +1,5 @@
 ### Iniciar No cmd
-* mongo <para startar o mongodb>
+* mongo >para startar o mongodb
 * use nome_do_banco <para criar um banco de dados vazio>
 * cls <para limpar os comandos escritos>
 
@@ -45,9 +45,9 @@
 
 
 #### Dados no vscode.
-* db.nome_da_collection.insertOne({ <para definir dados mais organizados utilizando o vscode ou similar> </br>
-	nome: "Jorge",                  <após copiar tudo, basta clicar com o botão direito do mouse no mongodb para colar> </br>
-	idade: 70, </br>
+* db.nome_da_collection.insertOne({
+	nome: "Jorge",                  <para definir dados mais organizados utilizando o vscode ou similar> </br>
+	idade: 70,						<após copiar tudo, basta clicar com o botão direito do mouse no mongodb para colar> </br>
 	personalidade: "calmo", </br>
 	hobbies: ["Dar comida para os pombos", "fazer caminhada", "ler jornal"], </br>
 	caracteristicas: { </br>
