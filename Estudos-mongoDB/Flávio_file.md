@@ -1,8 +1,12 @@
 ### Iniciar No cmd
 > para startar o mongodb
 
-`mongo` 
-* use nome_do_banco <para criar um banco de dados vazio>
+`mongo`
+> para criar um database vazio
+
+`use nome_do_banco`
+
+
 * cls <para limpar os comandos escritos>
 
 
