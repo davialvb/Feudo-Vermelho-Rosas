@@ -2,9 +2,11 @@
 `mongo`
 >para startar o mongodb  
 <br>
+
 `use nome_do_banco`
 >para criar um database vazio
 <br>
+
 `cls` 
 >para limpar os comandos escritos
 <br>
