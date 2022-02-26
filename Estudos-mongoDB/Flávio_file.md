@@ -2,7 +2,7 @@
 >**para startar o mongodb**
 
 `mongo`
->** para criar um database vazio**
+>**para criar um database vazio**
 `use nome_do_banco`
 
 
