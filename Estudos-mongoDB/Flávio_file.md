@@ -20,20 +20,21 @@
 >As {} são para criar um 'document' dentro do banco
 <br>
 
-`db.nome_da_collection.insertMany([ </br>
-	{ nome: "Melo", idade: 20, profissao: "programador" },</br>
+`db.nome_da_collection.insertMany([
+	{ nome: "Melo", idade: 20, profissao: "programador" },
 	{ nome: "Clara", idade: 22, profissao: "designer" }
 ])`
 >os colchetes [] são pra criar um array
 <br>
 
->para mostrar os banco de dados existentes
-
 `show dbs`
-
->para mostrar as collections existentes
+>para mostrar os banco de dados existentes
+<br>
 
 `show collections`
+>para mostrar as collections existentes
+<br>
+<br>
 
 * db.nome_da_collection.find() <para mostrar todos os documents da collection>
 * db.nome_da_collection.find().pretty() <vai mostrar os documents de uma forma mais organizada>
