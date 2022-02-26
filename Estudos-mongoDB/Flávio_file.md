@@ -36,21 +36,44 @@
 <br>
 <br>
 
-* db.nome_da_collection.find() <para mostrar todos os documents da collection>
-* db.nome_da_collection.find().pretty() <vai mostrar os documents de uma forma mais organizada>
-* db.nome_da_collection.find({ idade: 20}) <vai mostrar todos os documents que tem idade = 20>
-* db.nome_da_collection.find({ nome: "Melo"}).count() <vai contar quantos tem o nome Melo>
-* db.nome_da_collection.find().count() <vai contar quantos documents tem na collections>
-* db.nome_da_collection.findOne() <vai pegar o primeiro document da collection>
-* db.nome_da_collection.findOne({ idade: 18 }) <vai pegar o primeiro document com idade = 18>
+`db.nome_da_collection.find()`
+>para mostrar todos os documents da collection
 
-* db.nome_da_collection.updateOne({ nome: "Flávio" }, { $set: { profissao: "programador" } }) <vai alterar a field profissao do "Flávio">
-* db.nome_da_collection.updateOne({ nome: "Flávio" }, { $set: { cor_cabelo: "Castanho" }) <serve para adicionar um field também>
-* db.nome_da_collection.updateMany({}, { $set: { salario: 2500 } }) <vai alterar o de todo mundo, já que não foi identificado no primeiro document>>
+`db.nome_da_collection.find().pretty()`
+>vai mostrar os documents de uma forma mais organizada
 
-* db.nome_da_collection.deleteOne({ nome: "Clara"}) <vai exluir o document da collection>
-* db.nome_da_collection.deleteMany({}) <vai deletar vários documents>
+`db.nome_da_collection.find({ idade: 20})` 
+>vai mostrar todos os documents que tem idade = 20
 
+`db.nome_da_collection.find({ nome: "Melo"}).count()`
+>vai contar quantos tem o nome Melo
+
+`db.nome_da_collection.find().count()`
+>vai contar quantos documents tem na collections
+
+`db.nome_da_collection.findOne() `
+>vai pegar o primeiro document da collection
+
+`db.nome_da_collection.findOne({ idade: 18 })` 
+>vai pegar o primeiro document com idade = 18
+<br>
+
+`db.nome_da_collection.updateOne({ nome: "Flávio" }, { $set: { profissao: "programador" } })` 
+>vai alterar a field profissao do "Flávio"
+
+`db.nome_da_collection.updateOne({ nome: "Flávio" }, { $set: { cor_cabelo: "Castanho" })`
+>serve também para adicionar um field
+
+`db.nome_da_collection.updateMany({}, { $set: { salario: 2500 } }) `
+>vai alterar o de todo mundo, já que não foi identificado no primeiro document
+
+`db.nome_da_collection.deleteOne({ nome: "Clara"}) `
+>vai exluir o document da collection
+
+`db.nome_da_collection.deleteMany({})`
+vai deletar vários documents
+<br>
+<br>
 
 ### Operadores
 * db.nome_da_collection.find({ idade: { $gt: 18 } }) <vai pegar os maiores de 18 (greater than)>
