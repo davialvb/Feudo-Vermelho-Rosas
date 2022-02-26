@@ -46,7 +46,7 @@
 >vai mostrar todos os documents que tem idade = 20
 
 `db.nome_da_collection.find({ nome: "Melo"}).count()`
->vai contar quantos tem o nome Melo
+>vai contar quantos documents tem o nome Melo
 
 `db.nome_da_collection.find().count()`
 >vai contar quantos documents tem na collections
@@ -71,27 +71,40 @@
 >vai exluir o document da collection
 
 `db.nome_da_collection.deleteMany({})`
-vai deletar vários documents
+>vai deletar vários documents
 <br>
 <br>
 
 ### Operadores
-* db.nome_da_collection.find({ idade: { $gt: 18 } }) <vai pegar os maiores de 18 (greater than)>
-* db.nome_da_collection.find({ idade: { $gte: 20 } }) <vai pegar os maiores ou iguais (greater than or equal)>
-* db.nome_da_collection.find({ idade: { $lt: 20 } }) <vai pegar os menores de 20 (less than)>
-* db.nome_da_collection.find({ idade: { $lte: 20 } }) <vai pegar os menores ou iguais (less than or equal)>
+`db.nome_da_collection.find({ idade: { $gt: 18 } })`
+>vai pegar os maiores de 18 (greater than)
 
-* db.pessoas.updateMany({ idade: { $gte: 21} }, { $set: { pode_beber: true } }) <nesse caso, só vai acrescentar o pode_beber em quem for maior ou igual a 21>
+`db.nome_da_collection.find({ idade: { $gte: 20 } })`
+>vai pegar os maiores ou iguais (greater than or equal)
 
-* db.pessoas.updateOne({ nome: "Flávio" }, { $inc: { idade: 2 } }) <O $inc serve para incrementar um valor na property>
-* db.pessoas.updateOne({ nome: "Flávio" }, { $inc: { idade: -2 } }) <ele também serve para decrementar um valor>
+`db.nome_da_collection.find({ idade: { $lt: 20 } })`
+>vai pegar os menores de 20 (less than)
 
+`db.nome_da_collection.find({ idade: { $lte: 20 } })`
+>vai pegar os menores ou iguais (less than or equal)
+
+`db.pessoas.updateMany({ idade: { $gte: 21} }, { $set: { pode_beber: true } })`
+>nesse caso, só vai acrescentar o pode_beber em quem for maior ou igual a 21
+<br>
+
+`db.pessoas.updateOne({ nome: "Flávio" }, { $inc: { idade: 2 } })` 
+>O $inc serve para incrementar um valor na property
+
+`db.pessoas.updateOne({ nome: "Flávio" }, { $inc: { idade: -2 } })` 
+>ele também serve para decrementar um valor
+<br>
+<br>
 
 
 #### Dados no vscode.
 * db.nome_da_collection.insertOne({
-	nome: "Jorge",                  <para definir dados mais organizados utilizando o vscode ou similar> </br>
-	idade: 70,						<após copiar tudo, basta clicar com o botão direito do mouse no mongodb para colar> </br>
+	nome: "Jorge",                   </br>
+	idade: 70,			 </br>
 	personalidade: "calmo", </br>
 	hobbies: ["Dar comida para os pombos", "fazer caminhada", "ler jornal"], </br>
 	caracteristicas: { </br>
@@ -101,3 +114,4 @@ vai deletar vários documents
 		cor_dos_olhos: "verdes"
 	} </br>
 })
+>para definir dados mais organizados utilizando o vscode ou similar, após copiar tudo, basta clicar com o botão direito do mouse no mongodb para colar
