@@ -2,23 +2,37 @@
 >**para startar o mongodb**
 
 `mongo`
->**para criar um database vazio**
+>para criar um database vazio
+
 `use nome_do_banco`
+>para limpar os comandos escritos
 
-
-* cls <para limpar os comandos escritos>
+`cls` 
 
 
 ### Colections
-* db.nome_da_collection.drop() <vai deletar uma collection>
+>vai deletar uma collection
 
-* db.nome_da_collection.insertOne({ nome: "Flávio", idade: 18, profissao: "estudante" } <As {} são para criar um 'document' dentro do banco> 
-* db.nome_da_collection.insertMany([ <os colchetes [] são pra criar um array>
+`db.nome_da_collection.drop()`
+
+>As {} são para criar um 'document' dentro do banco
+
+`db.nome_da_collection.insertOne({ nome: "Flávio", idade: 18, profissao: "estudante" }` 
+
+>os colchetes [] são pra criar um array
+
+`db.nome_da_collection.insertMany([ 
 	{ nome: "Melo", idade: 20, profissao: "programador" },
 	{ nome: "Clara", idade: 22, profissao: "designer" }
-])
-* show dbs <para mostrar os banco de dados existentes>
-* show collections <para mostrar as collections existentes>
+])`
+
+>para mostrar os banco de dados existentes
+
+`show dbs`
+
+>para mostrar as collections existentes
+
+`show collections`
 
 * db.nome_da_collection.find() <para mostrar todos os documents da collection>
 * db.nome_da_collection.find().pretty() <vai mostrar os documents de uma forma mais organizada>
