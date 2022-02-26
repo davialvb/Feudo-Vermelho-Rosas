@@ -1,29 +1,26 @@
 ### Iniciar No cmd
->**para startar o mongodb**
-
 `mongo`
->para criar um database vazio
+>para startar o mongodb
 
 `use nome_do_banco`
->para limpar os comandos escritos
+>para criar um database vazio
 
 `cls` 
+>para limpar os comandos escritos
 
 
 ### Colections
 `db.nome_da_collection.drop()`
 >vai deletar uma collection
 
->As {} são para criar um 'document' dentro do banco
-
 `db.nome_da_collection.insertOne({ nome: "Flávio", idade: 18, profissao: "estudante" }` 
-
->os colchetes [] são pra criar um array
+>As {} são para criar um 'document' dentro do banco
 
 `db.nome_da_collection.insertMany([ 
 	{ nome: "Melo", idade: 20, profissao: "programador" },
 	{ nome: "Clara", idade: 22, profissao: "designer" }
 ])`
+>os colchetes [] são pra criar um array
 
 >para mostrar os banco de dados existentes
 
