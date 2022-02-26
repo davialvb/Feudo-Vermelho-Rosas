@@ -1,5 +1,5 @@
 ### Iniciar No cmd
->para startar o mongodb
+>**para startar o mongodb**
 
 `mongo`
 
