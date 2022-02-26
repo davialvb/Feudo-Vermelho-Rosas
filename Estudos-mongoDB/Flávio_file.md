@@ -14,15 +14,18 @@
 ### Colections
 `db.nome_da_collection.drop()`
 >vai deletar uma collection
+<br>
 
 `db.nome_da_collection.insertOne({ nome: "Flávio", idade: 18, profissao: "estudante" }` 
 >As {} são para criar um 'document' dentro do banco
+<br>
 
-`db.nome_da_collection.insertMany([ 
-	{ nome: "Melo", idade: 20, profissao: "programador" },
+`db.nome_da_collection.insertMany([ </br>
+	{ nome: "Melo", idade: 20, profissao: "programador" },</br>
 	{ nome: "Clara", idade: 22, profissao: "designer" }
 ])`
 >os colchetes [] são pra criar um array
+<br>
 
 >para mostrar os banco de dados existentes
 
