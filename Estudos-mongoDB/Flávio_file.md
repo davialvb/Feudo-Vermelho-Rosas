@@ -11,9 +11,8 @@
 
 
 ### Colections
->vai deletar uma collection
-
 `db.nome_da_collection.drop()`
+>vai deletar uma collection
 
 >As {} são para criar um 'document' dentro do banco
 
