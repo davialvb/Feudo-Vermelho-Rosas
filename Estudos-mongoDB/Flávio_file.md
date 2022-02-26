@@ -1,6 +1,6 @@
 ### Iniciar No cmd
 `mongo`
->para startar o mongodb
+>para startar o mongodb  
 
 `use nome_do_banco`
 >para criar um database vazio
