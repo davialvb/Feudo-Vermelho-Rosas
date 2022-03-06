@@ -275,11 +275,30 @@ var n = 3  -->  n += 2  -->  window.alert(n)
 
 Exemplo de condição:
 
-                 |-->{EVS1}-->| 
+                 |--> EVS1 -->| 
                  |            |
-{VS}-->{VS}--> [EVS]        [EVSD]--> {VS1 ou VS2}
+   VS--> VS-->  EVS          EVSD--> VS1 ou VS2
                  |            |
-                 |-->{EVS2}-->|
+                 |--> EVS2 -->|
+
+
+                  {VS}
+                   |
+                   |
+                  {VS}
+                   |
+                   |
+            ---- {EVS} -----
+            |              |
+            |              |
+          {EVS1}         {EVS2}
+            |              |
+            |              |
+            ---- {EVSD} ----
+                   |
+                   |
+              {VS1 ou VS2}
+
 
 VS == Variável Sequencial
 EVS == Escolha de Variável Sequencial
@@ -303,6 +322,8 @@ if (EVS1) {
 
 # Tipos de condição
 
+~~~ JavaScript
+
 if (condição) {     |
   true              |-> Condição simples
 }                   |
@@ -313,6 +334,8 @@ if (condição) {     |
 } else {            |-> Condição composta
   false             |
 }                   |
+
+~~~
 
 # Condições aninhadas
 
@@ -374,7 +397,7 @@ EVSD == Escolha de Variável Sequencial Definida
 
 No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequência e opte por escolhas diferentes, o resultado vai ser definido por meio delas. 
 
-* Exemplo: Estamos em uma VS e aparecem duas EVS (EVS1 e EVS2), caso o usuário opte pela *EVS3*, irá chegar na EVSD, que por sua vez vai determinar qual VS foi escolhida, que no caso é a *VS3*.
+* Exemplo: Estamos em uma VS e aparecem quatro EVS (EVS1, EVS2, EVS3 e EVS4), caso o usuário opte pela *EVS3*, irá chegar na EVSD, que por sua vez vai determinar qual VS foi escolhida, que no caso é a *VS3*.
 
 # Estrutura da condição múltipla
 
