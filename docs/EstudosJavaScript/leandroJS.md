@@ -1,11 +1,11 @@
-#Curso de JavaScript
-##Variáveis 
+# Curso de JavaScript
+## Variáveis 
 
 Exemplo:
 var n = 1
 var n = 'leandro'
 
-##Funções:
+## Funções:
 
 Exemplo:
 
@@ -18,7 +18,7 @@ console.log(n)
 
 addnum()
 
-##Condicionais
+## Condicionais
 
 Exemplo1:
 
@@ -49,4 +49,4 @@ switch (n){
         console.log('[ERRO]')
         break
 }
-##Vetores
+## Vetores
