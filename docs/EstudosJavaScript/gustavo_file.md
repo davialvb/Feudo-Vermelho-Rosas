@@ -1,4 +1,4 @@
-# JavaScript's guide
+# JavaScript's guide (Curso em Vídeo)
 
 # Variáveis em JS
 
@@ -27,16 +27,24 @@ Para concatenar uma frase com uma variável qualquer, é necessário a utilizaç
 
 * Exemplo1: 
 
-`var nome = Gustavo`
-`window.alert('Você é novo por aqui, ' + nome + '?')
+~~~JavaScript
 
+`var nome = Gustavo`
+`window.alert('Você é novo por aqui, ' + nome + '?')`
+
+~~~
 Neste exemplo, adota-se um template mais "agradável" na concatenação: 
 
 * Exemplo2 (mais adaptável):
 
+~~~JavaScript
+
 `nome = Gustavo`
-`window.alert(`Você é novo por aqui, ${nome}`)`
-> Obs: Quando for colocar o texto com a variável, deve-se utilizar a crase normal ( ` ).
+`window.alert("Você é novo por aqui, ${nome}")`
+
+// Obs: Quando for colocar a mensagem com a variável, deve-se utilizar a crase ( ` ), e não a que foi utilizada acima (aspas).
+
+~~~
 
 ## Formatação de números
 
@@ -71,6 +79,7 @@ Aqui, os operadores que vão ser mais utilizados serão: **aritméticos**, **atr
 
 ## Aritméticos
 
+~~~JavaScript
 5 + 2 = 7 
 5 - 2 = 3 
 5 * 2 = 10 
@@ -78,14 +87,14 @@ Aqui, os operadores que vão ser mais utilizados serão: **aritméticos**, **atr
 5 % 2 = 1  
 5 ** 2 = 25
 
-<!-- 
-Cuidado com a precedência dos operadores! Segue a lista de prioridade:
+// Cuidado com a precedência dos operadores! Segue a lista de prioridade:
 
 1. ()
 2. **
 3. * | / | %
 4. + | - 
--->
+
+~~~
 
 ## Atribuição
 
@@ -340,10 +349,15 @@ Exemplo de condição:
                    |
               {VS1 ou VS2}
 
+~~~JavaScript
 
 VS == Variável Sequencial
 EVS == Escolha de Variável Sequencial
 EVSD == Escolha de Variável Sequencial Definida
+
+~~~
+
+* os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
 
 No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequência e opte por escolhas diferentes, o resultado vai ser definido por meio delas. 
 
@@ -409,10 +423,15 @@ Exemplo de condição aninhada:
                      |
                 {VS1 ou VS2}
 
+~~~JavaScript
 
 VS == Variável Sequencial
 EVS == Escolha de Variável Sequencial
 EVSD == Escolha de Variável Sequencial Definida    
+
+~~~
+
+* os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
 
 No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequência e opte por escolhas diferentes, o resultado vai ser definido por meio delas. 
 
@@ -455,9 +474,15 @@ Exemplo:
                           |
                {VS1, VS2, VS3 OU VS4}
 
+~~~JavaScript
+
 VS == Variável Sequencial
 EVS == Escolha de Variável Sequencial
 EVSD == Escolha de Variável Sequencial Definida
+
+~~~
+
+* os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
 
 No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequência e opte por escolhas diferentes, o resultado vai ser definido por meio delas. 
 
@@ -507,8 +532,6 @@ function comerPizza() {
 
 ~~~
 
-## Repetições
-
 # Estrutura da repetição
 
 ~~~JavaScript
@@ -542,6 +565,8 @@ Outro exemplo de repetição:
           |         |
           |         |
         {EVS}--------                 
+
+* os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
 
 Estrutura:
 
