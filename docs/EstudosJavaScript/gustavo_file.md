@@ -91,6 +91,8 @@ Cuidado com a precedência dos operadores! Segue a lista de prioridade:
 
 Definição de **atribuição simples**:
 
+~~~ JavaScript
+
 var a = 5 + 3          | 8
 var b = a % 5          | 3 
 var c = 5 * b ** 2     | 45
@@ -98,7 +100,11 @@ var d = 10 - a / 2     | 6
 var e = 6 * 2 / d      | 2
 var f = b % e + 4 / e  | 3
 
+~~~
+
 Definição de **auto-atribuição** com uma simplificação bastante usada:
+
+~~~JavaScript
 
 var n = 3
 n = n + 4   ou   n += 4    | 7  
@@ -108,11 +114,17 @@ n = n / 2   ou   n /= 2    | 4
 n = n ** 2  ou   n **= 2   | 16 
 n = n % 5   ou   n %= 5    | 1  
 
+~~~
+
 Definição de **incremento**:
+
+~~~JavaScript
 
 var x = 5
 x = x + 1   ou   x += 1  ={Incremento}=  x++ 
 x = x - 1   ou   x -= 1  ={Incremento}=  x--
+
+~~~
 
 > Obs: Digitei o "={Incremento}=" apenas para simular uma transformação que ocorre quando decidimos optar por esse operador.
 
@@ -122,6 +134,8 @@ Definição de **relacionais** e um pouco de **identidade** que segue a mesma l�
 
 *relacionais*:
 
+~~~JavaScript
+
 5 > 2   --> True
 7 < 4   --> False
 8 >= 8  --> True
@@ -129,42 +143,66 @@ Definição de **relacionais** e um pouco de **identidade** que segue a mesma l�
 5 == 5  --> True
 4 != 4  --> False
 
+~~~
+
 *identidade*:
+
+~~~Javascript
 
 5 == 5    --> True
 5 == '5'  --> True 
 5 === '5' --> False
 5 === 5   --> True
 
+~~~
+
 # Lógicos
 
-Definição de **lógicos**:
+Definição de **lógicos** com um exemplo para demonstrar melhor:
 
 !   --> *negação*
-> "Quero uma caneta mas ela NÃO pode ser azul
+
+Quero uma caneta mas ela NÃO pode ser azul
+
 &&  --> *conjunção*
-> "Quero uma caneta azul e uma vermelha"
+
+Quero uma caneta azul e uma vermelha
+
 ||  --> *disjunção*
-> "Quero uma caneta azul ou uma vermelha, mas se eu ganhar as duas estou satisfeito também"
+
+Quero uma caneta azul ou uma vermelha, mas se eu ganhar as duas estou satisfeito também
 
 *Negação*
 
 !true   -->  false
+
+Se for true, significa que é falso
+
 !false  -->  true
 
+Se for false, significa que é true
+
 *Conjunção*
+
+~~~JavaScript
 
 true && true    -->  true
 true && false   -->  false
 false && true   -->  false
 false && false  -->  false
 
+~~~
+
 *Disjunção*
+
+~~~JavaScript
 
 true || true    -->  true
 true || false   -->  true
 false || true   -->  true
 false || false  -->  false
+
+~~~
 
 __________________________________________________
 
@@ -174,12 +212,18 @@ Lista de precedência atualizada:
 2. Lista de relacionais 
 > No relacionais, não existe uma ordem de precedência
 3. Lista de lógicos
-<!-- 
+
+~~~JavaScript
+
 3.1. !
 3.2. &&
 3.3. || 
--->
+
+~~~
+
 __________________________________________________
+
+## Ternário
 
 Definição de **ternário**:
 
@@ -448,6 +492,8 @@ Um exemplo que aborda essa estrutura está no "ex013.js"
 
 Em um exemplo de comer 8 pedaços de uma pizza, requer uma repetição:
 
+~~~JavaScript 
+
 function comerPizza() {
   comerFatia()
   comerFatia()
@@ -459,30 +505,19 @@ function comerPizza() {
   comerFatia()
 }
 
+~~~
+
 ## Repetições
 
-Exemplo
-         
-          {VS}
-           |
-           |
- ------->{EVS}--------
- |         |         |
- |         |         |
- |         |         |
- --------{EVS1}      |
-                     |
-                     |
-           |<---------
-           |
-          { }
+# Estrutura da repetição
 
-## Estrutura da repetição
+~~~JavaScript
 
 while (EVS1) {
   EVS
 }
 
+~~~
 Tendo o exemplo da pizza usando o `while`:
 
 ~~~JavaScript
@@ -550,11 +585,11 @@ var num = [5,8,4]
 
 num[3] = 6  -----> num = [5,8,4,6]
 
-Pode-se de outra forma, também:
+* Pode-se de outra forma, também:
 
 num.push(9) -----> num = [5,8,4,6,9]
 
-Para ver a quantidade de elementos em uma array, usa-se o `num.length`
+* Para ver a quantidade de elementos em uma array, usa-se o `num.length`
 
 Exemplo de manipulação de array com o *for*:
 
