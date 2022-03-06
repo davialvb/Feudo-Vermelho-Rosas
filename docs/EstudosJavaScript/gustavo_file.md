@@ -275,13 +275,6 @@ var n = 3  -->  n += 2  -->  window.alert(n)
 
 Exemplo de condição:
 
-                 |--> EVS1 -->| 
-                 |            |
-   VS--> VS-->  EVS          EVSD--> VS1 ou VS2
-                 |            |
-                 |--> EVS2 -->|
-
-
                   {VS}
                    |
                    |
@@ -341,19 +334,33 @@ if (condição) {     |
 
 Exemplo de condição aninhada:
 
-                |-->{EVS1}-------------------------->|                      
-                |                                    |
-                |                                    |
-{VS}-->{VS}-->[EVS]                                [EVSD]--> {VS1 ou VS2(2.1 ou 2.2)}
-                |                                    |
-                |                                    |
-                |              |-->{EVS2.1}-->|      |
-                |              |              |      |
-                |              |              |      |
-                |-->{EVS2}-->[EVS]          [EVSD]-->|
-                               |              |
-                               |              |
-                               |-->{EVS2.2}-->|
+                  {VS}
+                   |
+                   |
+                  {VS}
+                   |
+                   |
+         ------- {EVS} --------
+         |                    |
+         |                    |
+       {EVS1}               {EVS2}
+         |                    |
+         |                    |
+         |              ----{EVS}----
+         |              |            |
+         |              |            |
+         |           {EVS2.1}     {EVS2.2}
+         |              |            |
+         |              |            |
+         |              ----{EVSD}---
+         |                    |
+         |                    |
+         |-------{EVSD}-------|
+                   |
+                   |
+                   |
+              {VS1 ou VS2}
+
 
 VS == Variável Sequencial
 EVS == Escolha de Variável Sequencial
@@ -381,15 +388,24 @@ Um exemplo que aborda essa estrutura está no "ex012.js"
 
 # Condição Múltipla
 
-                 |-->{EVS1}-->|            
-                 |            |
-                 |-->{EVS2}-->| 
-                 |            |
-{VS}-->{VS}--> [EVS]        [EVSD]--> {VS1, VS2, VS3 ou VS4}
-                 |            |
-                 |-->{EVS3}-->|
-                 |            |  
-                 |-->{EVS4}-->|
+Exemplo:
+
+                  {VS}
+                   |
+                   |
+                  {VS}
+                   |
+                   |
+    -------------{EVS}------------
+    |      |              |      | 
+    |      |              |      |
+  {EVS1} {EVS2}         {EVS3} {EVS4}
+    |      |              |      |
+    |      |              |      |
+    -------------{EVSD}-----------
+                   |
+                   |
+         {VS1, VS2, VS3 OU VS4}
 
 VS == Variável Sequencial
 EVS == Escolha de Variável Sequencial
@@ -440,14 +456,22 @@ function comerPizza() {
 }
 
 # Repetições
+
+Exemplo
          
-          |-----------------|
-          |                 |
-          |                 |
-{VS}--> [EVS]--> {EVS1}     |--> {} 
-          ^        |
-          |        |
-          |--------|
+          {VS}
+           |
+           |
+ ------->{EVS}--------
+ |         |         |
+ |         |         |
+ |         |         |
+ --------{EVS1}      |
+                     |
+                     |
+           |<---------
+           |
+          { }
 
 # Estrutura da repetição
 
@@ -469,10 +493,16 @@ function () {
 
 Outro exemplo de repetição:
 
-{VS}--> { } --> {EVS1}--> [EVS]-->
-         ^                  |
-         |                  |
-         |------------------|                 
+         {VS}
+          |
+          |
+         { }<--------        
+          |         |
+          |         |
+        {EVS1}      |
+          |         |
+          |         |
+        {EVS}--------                 
 
 Estrutura:
 
@@ -488,13 +518,18 @@ do {
 
 Exemplo: 
 
-           |-----------------|
-           |                 |
-           |                 |
-{Ini}--> [Test]--> {Inc}     |--> { } 
-           ^         |
-           |         |
-           |---------|
+            {Ini}
+              |
+              |
+   -------->{Test}---------
+   |          |           |
+   |          |           |
+   |          |           |
+   ---------{Inc}         |
+                          |
+                          |
+                          |
+              { }<---------
 
 Estrutura:
 
@@ -522,12 +557,14 @@ Exemplo: vaga a = [c1,c2,c3]
 
                              | <------- {elementos}
     | --------> a            | 
-    |           [ c1 , c2 , c3 ] <--- |
+    |           { c1 , c2 , c3 } <--- |                 
     |       | ---> 0    1    2        |
  {vetor}    |                         |
             |                         |
             |                         |
       {ídice chave}            {conteúdo valor}
+
+> Usei as chaves "{}" para mostrar o array, porém usa-se colchetes "[]"
 
 No esquema apresentado, mostra que um vetor, array ou variável composta é uma variável que tem vários elementos, cada elemento é composto por seu valor e por uma chave de identificação.
 
