@@ -80,6 +80,7 @@ Aqui, os operadores que vão ser mais utilizados serão: **aritméticos**, **atr
 ## Aritméticos
 
 ~~~JavaScript
+
 5 + 2 = 7 
 5 - 2 = 3 
 5 * 2 = 10 
@@ -183,13 +184,21 @@ Quero uma caneta azul ou uma vermelha, mas se eu ganhar as duas estou satisfeito
 
 *Negação*
 
+~~~JavaScript
+
 !true   -->  false
 
-Se for true, significa que é falso
+// Se for true, significa que é falso
+
+~~~
+
+~~~JavaScript
 
 !false  -->  true
 
-Se for false, significa que é true
+// Se for false, significa que é true
+
+~~~
 
 *Conjunção*
 
@@ -326,7 +335,11 @@ Dois grandes exemplos que abordam os eventos DOM é o "ex006.html" e "ex007.html
 
 ## Sequências
 
+~~~JavaScript
+
 var n = 3  -->  n += 2  -->  window.alert(n)
+
+~~~
 
 ## Condições
 
@@ -357,7 +370,7 @@ EVSD == Escolha de Variável Sequencial Definida
 
 ~~~
 
-* os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
+* Os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
 
 No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequência e opte por escolhas diferentes, o resultado vai ser definido por meio delas. 
 
@@ -431,7 +444,7 @@ EVSD == Escolha de Variável Sequencial Definida
 
 ~~~
 
-* os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
+* Os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
 
 No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequência e opte por escolhas diferentes, o resultado vai ser definido por meio delas. 
 
@@ -482,7 +495,7 @@ EVSD == Escolha de Variável Sequencial Definida
 
 ~~~
 
-* os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
+* Os nomes que coloquei acima tiveram apenas o intuito de facilitar a explicação, sendo totalmente arbitrárias.
 
 No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequência e opte por escolhas diferentes, o resultado vai ser definido por meio delas. 
 
@@ -600,19 +613,27 @@ Só conseguem armazenar um valor por vez
 
 Devem ser capazes de armazenar vários valores em uma mesma estrutura
 
-Exemplo: vaga a = [c1,c2,c3]
+Exemplo: `vaga a = [c1,c2,c3]`
 
 Um vetor, array ou variável composta é uma variável que tem vários elementos, cada elemento é composto por seu valor e por uma chave de identificação.
 
 # Adicionando valores
 
+~~~JavaScript
+
 var num = [5,8,4]
 
 num[3] = 6  -----> num = [5,8,4,6]
 
+~~~
+
 * Pode-se de outra forma, também:
 
+~~~JavaScript
+
 num.push(9) -----> num = [5,8,4,6,9]
+
+~~~
 
 * Para ver a quantidade de elementos em uma array, usa-se o `num.length`
 
@@ -629,7 +650,9 @@ for (var pos = 0; pos<num.length; pos++) {
 
 ~~~
 
-"Saída:
+Saída:
+
+~~~JavaScript
 
 (6) [2, 7, 4, 8, 5, 3]
 
@@ -643,7 +666,9 @@ A posição 3 tem o valor 8
 
 A posição 4 tem o valor 5
 
-A posição 5 tem o valor 3"
+A posição 5 tem o valor 3
+
+~~~
 
 Porém, é possível simplificar aquela função do *for* assim:
 
@@ -709,4 +734,8 @@ console.log(`12 é um número ${res}`)
 
 Saída:
 
-"12 é um número par"
+~~~JavaScript
+
+12 é um número par
+
+~~~
