@@ -340,26 +340,26 @@ Exemplo de condição aninhada:
                   {VS}
                    |
                    |
-         ------- {EVS} --------
-         |                    |
-         |                    |
-       {EVS1}               {EVS2}
-         |                    |
-         |                    |
-         |              ----{EVS}----
-         |              |            |
-         |              |            |
-         |           {EVS2.1}     {EVS2.2}
-         |              |            |
-         |              |            |
-         |              ----{EVSD}---
-         |                    |
-         |                    |
-         |-------{EVSD}-------|
-                   |
-                   |
-                   |
-              {VS1 ou VS2}
+           ------- {EVS} --------
+           |                    |
+           |                    |
+         {EVS1}               {EVS2}
+          |                     |
+          |                     |
+          |               ----{EVS}----
+          |               |            |
+          |               |            |
+          |            {EVS2.1}     {EVS2.2}
+          |               |            |
+          |               |            |
+          |               ----{EVSD}---
+          |                     |
+          |                     |
+          |--------{EVSD}-------|
+                     |
+                     |
+                     |
+                {VS1 ou VS2}
 
 
 VS == Variável Sequencial
@@ -390,22 +390,22 @@ Um exemplo que aborda essa estrutura está no "ex012.js"
 
 Exemplo:
 
-                  {VS}
-                   |
-                   |
-                  {VS}
-                   |
-                   |
-    -------------{EVS}------------
-    |      |              |      | 
-    |      |              |      |
-  {EVS1} {EVS2}         {EVS3} {EVS4}
-    |      |              |      |
-    |      |              |      |
-    -------------{EVSD}-----------
-                   |
-                   |
-         {VS1, VS2, VS3 OU VS4}
+                         {VS}
+                          |
+                          |
+                         {VS}
+                          |
+                          |
+         ---------------{EVS}--------------
+         |          |          |          | 
+         |          |          |          |
+       {EVS1}     {EVS2}     {EVS3}     {EVS4}
+         |          |          |          |
+         |          |          |          |
+         ---------------{EVSD}-------------
+                          |
+                          |
+               {VS1, VS2, VS3 OU VS4}
 
 VS == Variável Sequencial
 EVS == Escolha de Variável Sequencial
