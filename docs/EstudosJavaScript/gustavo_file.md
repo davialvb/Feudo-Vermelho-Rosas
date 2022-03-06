@@ -1,8 +1,8 @@
-### JavaScript's guide
+# JavaScript's guide
 
-## Variáveis em JS
+# Variáveis em JS
 
-# Definição de variáveis
+## Definição de variáveis
 
 Usamos 'var' ou 'let' para definir uma nova variável
 
@@ -13,15 +13,15 @@ Usamos 'var' ou 'let' para definir uma nova variável
 
 ## Tipos primitivos
 
-# Fundamentais
+## Fundamentais
 
 Existem três tipos primitivos primordiais, que são o **number**, **string** e o **boolean**
 
 * Podemos utilizar o comando `typeof {variável}` para descobrir qual é o tipo da variável
 
-## Tratamento de dados
+# Tratamento de dados
 
-# Concatenação
+## Concatenação
 
 Para concatenar uma frase com uma variável qualquer, é necessário a utilização do '+' com o nome da variável a seguir:
 
@@ -38,7 +38,7 @@ Neste exemplo, adota-se um template mais "agradável" na concatenação:
 `window.alert(`Você é novo por aqui, ${nome}`)`
 > Obs: Quando for colocar o texto com a variável, deve-se utilizar a crase normal ( ` ).
 
-# Formatação de números
+## Formatação de números
 
 Caso queiramos transformar uma string em um número, devemos utilizar alguns comandos que são: `Number.parseInt(n)` para inteiros, e o `Number.parseFloat(n)` para reais
 
@@ -60,16 +60,16 @@ Um comando bem legal que aborda valor monetário é esse:
 
 Tá, mas o que significa isso tudo? Simples! Ele pega o valor do "n1" e transforma em um valor do país solicitado, que no exemplo acima foi do Brasil (BRL), mas poderíamos também mudar para um outro país, como o do EUA (USD) que ficaria em dólar
 
-# Formatação de strings
+## Formatação de strings
 
 Para formatar strings conseguimos usar diversos métodos, como por exemplo o `nome.toLowerCase` que fará a string ser totalmente minúscula
 > Obs: O "nome" é uma variável totalmente arbitrária.
 
-## Operadores
+# Operadores
 
 Aqui, os operadores que vão ser mais utilizados serão: **aritméticos**, **atribuição**, **relacionais**, **lógicos** e o **ternário**
 
-# Aritméticos
+## Aritméticos
 
 5 + 2 = 7 
 5 - 2 = 3 
@@ -87,7 +87,7 @@ Cuidado com a precedência dos operadores! Segue a lista de prioridade:
 4. + | - 
 -->
 
-# Atribuição
+## Atribuição
 
 Definição de **atribuição simples**:
 
@@ -116,6 +116,8 @@ x = x - 1   ou   x -= 1  ={Incremento}=  x--
 
 > Obs: Digitei o "={Incremento}=" apenas para simular uma transformação que ocorre quando decidimos optar por esse operador.
 
+## Relacionais
+
 Definição de **relacionais** e um pouco de **identidade** que segue a mesma lógica:
 
 *relacionais*:
@@ -133,6 +135,8 @@ Definição de **relacionais** e um pouco de **identidade** que segue a mesma l�
 5 == '5'  --> True 
 5 === '5' --> False
 5 === 5   --> True
+
+# Lógicos
 
 Definição de **lógicos**:
 
@@ -187,9 +191,9 @@ média >= 7.0 ? "Aprovado" : "Reprovado"
 
 Se a variável foi maior ou igual que 7, significa que foi aprovado, e reprovado se for menor
 
-## DOM (Document Object Model)
+# DOM (Document Object Model)
 
-# Árvore DOM
+## Árvore DOM
 
                    window
                      |
@@ -219,7 +223,7 @@ Se a variável foi maior ou igual que 7, significa que foi aprovado, e reprovado
                                |
                              strong
 
-# Selecionando elementos
+## Selecionando elementos
 
 Podemos fazer isso por **Marca**, **Id**, **Nome**, **Classe** e **Seletor**
 
@@ -251,7 +255,7 @@ Por *Seletor* (recomendável):
 
 Neste comando, é bom lembrar uma pequena observação: Se for selecionar uma div, por exemplo, usa-se o "#" para *id* e "." para *Classe*.
 
-# Eventos DOM
+## Eventos DOM
 
 É tudo que possa acontecer com algum elemento. Por exemplo, passar o mouse sobre a div e mostrar algo diferente.
 
@@ -265,13 +269,13 @@ function ação(parâmetro) {
 
 Dois grandes exemplos que abordam os eventos DOM é o "ex006.html" e "ex007.html"
 
-## Condições em JS
+# Condições em JS
 
-# Sequências
+## Sequências
 
 var n = 3  -->  n += 2  -->  window.alert(n)
 
-# Condições
+## Condições
 
 Exemplo de condição:
 
@@ -301,7 +305,7 @@ No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequê
 
 * Exemplo: Estamos em uma VS e aparecem duas EVS (EVS1 e EVS2), caso o usuário opte pela *EVS1*, irá chegar na EVSD, que por sua vez vai determinar qual VS foi escolhida, que no caso é a *VS1*.
 
-# Estrutura da condição
+## Estrutura da condição
 
 ~~~JavaScript
 
@@ -313,7 +317,7 @@ if (EVS1) {
 
 ~~~
 
-# Tipos de condição
+## Tipos de condição
 
 ~~~ JavaScript
 
@@ -330,7 +334,7 @@ if (condição) {     |
 
 ~~~
 
-# Condições aninhadas
+## Condições aninhadas
 
 Exemplo de condição aninhada:
 
@@ -370,7 +374,7 @@ No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequê
 
 * Exemplo: Estamos em uma VS e aparecem duas EVS (EVS1 e EVS2), caso o usuário opte pela *EVS2*, irá chegar em uma nova EVS (EVS2.1 e EVS2.2). Suponhamos, então, que ele decida pela *EVS2.1*, ou seja, vai resultar em uma EVSD, que por sua vez vai determinar qual VS foi escolhida, que no caso é a *VS2.1*.
 
-# Estrutura da condição aninhada
+## Estrutura da condição aninhada
 
 ~~~ JavaScript
 
@@ -386,7 +390,7 @@ if (EVS1) {
 
 Um exemplo que aborda essa estrutura está no "ex012.js"
 
-# Condição Múltipla
+## Condição Múltipla
 
 Exemplo:
 
@@ -415,7 +419,7 @@ No esquema apresentado, podemos assumir que caso o usuário esteja em uma sequê
 
 * Exemplo: Estamos em uma VS e aparecem quatro EVS (EVS1, EVS2, EVS3 e EVS4), caso o usuário opte pela *EVS3*, irá chegar na EVSD, que por sua vez vai determinar qual VS foi escolhida, que no caso é a *VS3*.
 
-# Estrutura da condição múltipla
+## Estrutura da condição múltipla
 
 ~~~JavaScript
 
@@ -440,7 +444,7 @@ switch (expressão) {
 
 Um exemplo que aborda essa estrutura está no "ex013.js"
 
-## Repetições
+# Repetições
 
 Em um exemplo de comer 8 pedaços de uma pizza, requer uma repetição:
 
@@ -455,7 +459,7 @@ function comerPizza() {
   comerFatia()
 }
 
-# Repetições
+## Repetições
 
 Exemplo
          
@@ -473,7 +477,7 @@ Exemplo
            |
           { }
 
-# Estrutura da repetição
+## Estrutura da repetição
 
 while (EVS1) {
   EVS
@@ -514,24 +518,7 @@ do {
 
 ~~~
 
-# Estrutura de repetição com variável de controle
-
-Exemplo: 
-
-            {Ini}
-              |
-              |
-   -------->{Test}---------
-   |          |           |
-   |          |           |
-   |          |           |
-   ---------{Inc}         |
-                          |
-                          |
-                          |
-              { }<---------
-
-Estrutura:
+## Estrutura de repetição com variável de controle
 
 ~~~JavaScript
 
@@ -543,30 +530,19 @@ for (inicio; teste; incr) {
 
 ~~~
 
-## Variáveis compostas (arrays)
+# Variáveis compostas (arrays)
 
-# Variáveis simples
+## Variáveis simples
 
 Só conseguem armazenar um valor por vez
 
-# Variáveis compostas
+## Variáveis compostas
 
 Devem ser capazes de armazenar vários valores em uma mesma estrutura
 
 Exemplo: vaga a = [c1,c2,c3]
 
-                             | <------- {elementos}
-    | --------> a            | 
-    |           { c1 , c2 , c3 } <--- |                 
-    |       | ---> 0    1    2        |
- {vetor}    |                         |
-            |                         |
-            |                         |
-      {ídice chave}            {conteúdo valor}
-
-> Usei as chaves "{}" para mostrar o array, porém usa-se colchetes "[]"
-
-No esquema apresentado, mostra que um vetor, array ou variável composta é uma variável que tem vários elementos, cada elemento é composto por seu valor e por uma chave de identificação.
+Um vetor, array ou variável composta é uma variável que tem vários elementos, cada elemento é composto por seu valor e por uma chave de identificação.
 
 # Adicionando valores
 
