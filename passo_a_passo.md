@@ -1,3 +1,4 @@
+![](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/73a73682-61c2-4eac-b2ce-79f6ea794dc9/ddi9ikq-236d7f0a-475c-4026-ada5-3a2659bfc42c.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzczYTczNjgyLTYxYzItNGVhYy1iMmNlLTc5ZjZlYTc5NGRjOVwvZGRpOWlrcS0yMzZkN2YwYS00NzVjLTQwMjYtYWRhNS0zYTI2NTliZmM0MmMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LEgvPGmPfGG9EG8jrX3mnDwpoAFQJdnMWyQv4rlUTkY) 
 ## Em primeiro lugar, instalamos o docker na máquina</br>
 
 `sudo apt update` 
