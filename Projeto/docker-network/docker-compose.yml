@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+    host1:
+        image: praqma/network-multitool
+        networks:
+            rede1:
+            rede2:
+    host2:
+        image: praqma/network-multitool
+        networks:
+            rede1:
+    host3:
+        image: praqma/network-multitool
+        networks:
+            rede2:
+    host4:
+        image: praqma/network-multitool
+        networks:
+            rede2:
+
+networks:
+    rede1:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 172.26.0.0/16
+    rede2:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 172.27.0.0/16
