@@ -13,8 +13,9 @@
 ## 🖥️ Visão Geral
 
 <p align="justify"> &emsp;&emsp;
-  O Feudo Vermelho Rosas tem como objetivo criar do zero um site web que consiga passar informações úteis sobre Ciber Segurança, que fale desde os diferentes vírus mais prejudiciais, até mesmo em quais dicas que os usuários podem usar para previni-las no seu sistema.
+  Somos um grupo de estudantes da matéria Desenvolvimento de Software da Universidade de Brasília. Nós, o Feudo Vermelho Rosas, temos como objetivo criar do zero um site web que consiga passar informações úteis sobre Cibersegurança, que fale desde os diferentes vírus mais prejudiciais, até mesmo em quais dicas que os usuários podem usar para previni-las no seu sistema.
 </p>
+
 
 ## 🤝 Como contribuir para o projeto
 <p align="justify"> &emsp;&emsp;
