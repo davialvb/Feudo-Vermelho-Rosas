@@ -5,7 +5,7 @@ services:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     environment:
-      MYSQL_DATABASE: todolist_db
+      MYSQL_DATABASE: blog_post
       MYSQL_ROOT_PASSWORD: root
     networks:
       vpcnet:

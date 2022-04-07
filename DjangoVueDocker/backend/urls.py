@@ -1,6 +1,10 @@
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import path
 
-from backend.todo.router import router
+from backend.blog.views import frontpage, post_detail
 
-urlpatterns = [path("admin/", admin.site.urls), path("api/", include(router.urls))]
+urlpatterns = [
+    path('', frontpage, name='frontpage'),
+    path('admin/', admin.site.urls),
+    path('<slug:slug>/', post_detail, name='post_detail'),
+]
