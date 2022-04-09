@@ -1,0 +1,179 @@
+<template>
+  <div class="about">
+ 
+    <body>
+
+<section class="carrossel" >
+
+  <div class="galery">
+    <img src="../static/recomendacao/hackernews.png" alt="notícia importante" style="height: 500px;">
+    <img src="../static/recomendacao/privacidade.jpeg" alt="notícia importante" style="height: 500px;">
+    <img src="../static/recomendacao/homemcapuz.jpeg" alt="notícia importante" style="height: 500px;">
+    <img src="../static/recomendacao/matrix.jpeg" alt="notícia importante" style="height: 500px;">
+    <img src="../static/recomendacao/hackernews.png" alt="notícia importante" style="height: 500px;">
+  </div>
+
+</section>
+
+<p id="Titulonoticias" style="margin-top: 35px">Filmes / Séries</p>
+
+
+<div id="container">
+  
+  <div class="item1" style="text-align: center;"><img src="../static/recomendacao/jogosdeguerra.jpeg" alt="" style="height: 300px; width: 450px;">
+      
+      <p class="nottema"><a style="text-decoration: none;" href="#">Jogos de Guerra</a></p>
+      <p style="font-size: 18px;">David Lightman é capaz de quebrar os mais avançados sistemas de segurança de computadores do mundo e acaba entrando no sistema do Departamento de Defesa dos EUA onde, sem querer, inicia conflito que pode levar à 3a. Guerra Mundial.</p>
+      <p id="Autor">John Badham</p>
+      <p id="Data">03/06/1983</p>
+
+  </div>
+
+  <div style="text-align: center;" class="item1"><img src="../static/recomendacao/millennium.jpeg" alt="" style="height: 300px;width: 450px;">
+      
+      <p class="nottema"><a style="text-decoration: none;" href="#">Millennium: Os Homens que Não Amavam as Mulheres</a></p>
+      <p style="font-size: 18px;">Um jornalista investigativo e uma hacker de computador são contratados para desvendar o desaparecimento de uma jovem há 36 anos. À medida que avançam na investigação crescem os riscos, pois a família da jovem não quer ter seus segredos revelados.</p>
+      <p id="Autor">David Fincher</p>
+      <p id="Data">27/01/2012</p>
+  </div>
+  
+</div>
+
+<div id="container2">
+
+  <div style="text-align: center;" class="item2"><img src="../static/recomendacao/matrix.jpeg" alt="" style="height: 300px; width: 450px;">
+      <p class="nottema"><a  style="text-decoration: none;" href="#">Matrix </a></p>
+      <p style="font-size: 18px;">Um jovem programador é atormentado por estranhos pesadelos. À medida que ele levanta hipóteses sobre os sonhos, ele descobre que é vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas e cria a ilusão de um mundo real enquanto usa os cérebros e corpos dos indivíduos para produzir energia.</p>
+      <p id="Autor">Lana Wachowski</p>
+      <p id="Data">21/05/1999</p>
+  </div>
+
+  <div style="text-align: center;" class="item2"><img src="../static/recomendacao/privacidade.jpeg" alt="" style="height: 300px; width: 450px;">
+      <p class="nottema"><a  style="text-decoration: none;" href="#">Privacidade Hackeada</a></p>
+      <p style="font-size: 18px;">Entenda como a empresa de análise de dados Cambridge Analytica se tornou o símbolo do lado sombrio das redes sociais após a eleição presidencial de 2016 nos EUA.</p>
+      <p id="Autor">Karim Amer, Jehane Noujaim</p>
+      <p id="Data">26/01/2019</p>
+  </div>
+</div>
+
+<p id="Titulonoticias">Livros</p>
+
+
+<div id="container">
+  
+  <div  class="item1" style="text-align: center;"><img src="../static/recomendacao/ciber.jpeg" alt="" style="height: 300px; width: 450px;">
+      
+      <p class="nottema"><a style="text-decoration: none;" href="#">Guerra Cibernética: A próxima ameaça à segurança e o que fazer a respeito</a></p>
+      <p style="font-size: 18px;">Computadores controlam boa parte das atuais infraestruturas civis e militares, incluindo sistemas críticos para o bem estar da sociedade e sistemas que suportam a adequada condução de ações militares. Ao usar armas computacionais que causam impacto em tais sistemas, o "inimigo da nação" pode comprometer o bom andamento de ações militares — ofensivas ou defensivas — e pode, ainda, imprimir ações que causem grande impacto na população civil e no funcionamento da sociedade. </p>
+      <p id="Autor">Richard A. Clarke</p>
+      <p id="Data">26/06/2015</p>
+
+  </div>
+
+  <div style="text-align: center;" class="item1"><img src="../static/recomendacao/mundo.jpeg" alt="" style="height: 300px; width: 450px;">
+      
+      <p class="nottema"><a style="text-decoration: none;" href="#">Clique aqui para matar todo mundo: como sobreviver em um mundo hiperconectado</a></p>
+      <p style="font-size: 18px;">Ao abrir nossas vidas para esse futuro, muitas vezes chamado de Internet das Coisas, começamos a ver seu imenso potencial em ideias como carros autônomos, cidades inteligentes e agentes pessoais equipados com os próprios algoritmos de comportamento. Mas todas as moedas têm dois lados. Todos os computadores podem ser hackeados. E computadores conectados à Internet são os mais vulneráveis. Esqueça roubo de dados: invasores digitais inovadores hoje podem hackear seu carro, seu marca-passos e a rede de energia de um país.</p>
+      <p id="Autor">Bruce Schneier</p>
+      <p id="Data">11/03/2020</p>
+  </div>
+  
+</div>
+
+<div id="container2">
+
+  <div style="text-align: center;" class="item2"><img src="../static/recomendacao/hacker.png" alt="" style="height: 300px; width: 450px;">
+      <p class="nottema"><a  style="text-decoration: none;" href="#">Cult of the Dead Cow: How the original hacking supergroup might just save the world </a></p>
+      <p style="font-size: 18px;">Ele aborda sobre a história do Cult of Dead Cow, um dos grupos de hackers mais conhecidos no mundo inteiro. Esse grupo é conhecido por alinhar a ideia de hack com o ativismo, de modo a intervir na Tecnologia da Informação para propagar ações impactantes ao meio social.</p>
+      <p id="Autor">Joseph Menn</p>
+      <p id="Data">04/06/2019</p>
+  </div>
+
+  <div style="text-align: center;" class="item2"><img src="../static/recomendacao/militares.jpeg" alt="" style="height: 300px; width: 450px;">
+      <p class="nottema"><a  style="text-decoration: none;" href="#">Contagem Regressiva até Zero Day</a></p>
+      <p style="font-size: 18px;">Com uma pegada mais investigativa, essa história verídica coloca como personagem principal o Stuxnet: a primeira arma digital do mundo. Descoberta em 2010, ela tinha como objetivo controlar as centrífugas de enriquecimento de urânio do Irã. Seu pano de fundo deixa em evidência um novo momento do mundo, em que bases militares gastam milhões em tecnologias para possíveis novas formas de guerra: as digitais.</p>
+      <p id="Autor">Kim Zetter</p>
+      <p id="Data">30/06/2017</p>
+  </div>
+</div>
+
+<p id="Titulonoticias">Sites / Blogs</p>
+
+  <div id="container">
+  
+  <div  class="item1" style="text-align: center;"><img src="../static/recomendacao/report.png" alt="" style="height: 300px; width: 450px;">
+      
+      <p class="nottema"><a style="text-decoration: none;" href="https://www.securityreport.com.br/" target="_blank">Security Report</a></p>
+      <p style="font-size: 18px;">Site em português com as principais noticias, atualidades e análises de especialistas na área de cibersegurança</p>      
+      <p id="Autor">DwOne</p>
+      <p id="Data">2016</p>
+
+  </div>
+
+  <div style="text-align: center;" class="item1"><img src="../static/recomendacao/zeroday.png" alt="" style="height: 300px; width: 450px;">
+      
+      <p class="nottema"><a style="text-decoration: none;" href="" target="_blank">Zero Day</a></p>
+      <p style="font-size: 18px;">Enquanto sai novas notícias, vunerabilidades e pesquisas ao redor do mundo a cada minuto, um blog que posta mais de uma vez por dia pode te ajudar a acessar o que é mais importante no mundo da cibersegurança </p>
+      <p id="Autor">ZDNet</p>
+      <p id="Data">2022</p>
+  </div>
+  
+</div>
+
+<div id="container2">
+
+  <div style="text-align: center;" class="item2"><img src="../static/recomendacao/hackernews.png" alt="" style="height: 300px; width: 450px;">
+      <p class="nottema"><a  style="text-decoration: none;" href="https://thehackernews.com/" target="_blank">The Hacker News </a></p>
+      <p style="font-size: 18px;">Sendo o principal meio eletrônico informativo sobre ciberataques e hackers, o The Hacker News possi uma plataforma repleta de notícias, atualizadas constantemente.</p>
+      <p id="Autor">Mohit K.</p>
+      <p id="Data">2010</p>
+  </div>
+
+  <div style="text-align: center;" class="item2"><img src="../static/recomendacao/naked.png" alt="" style="height: 300px; width: 450px;">
+      <p class="nottema"><a  style="text-decoration: none;" href="https://nakedsecurity.sophos.com/" target="_blank">Naked Security</a></p>
+      <p style="font-size: 18px;">Este site informativo foi feito pela Sophos, uma empresa de cibersegurança, que faz um excelente trabahlho na criação de conteúdos interessantes, relevantes e acessíveis, como a privacidade do Android e do Facebook.</p>
+      <p id="Autor">Sophos</p>
+      <p id="Data">1997</p>
+  </div>
+</div>
+
+</body>
+
+  </div>
+</template>
+
+<style>
+
+.carrossel {
+    height: 500px;
+    width: 800px;
+    background-color: black;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+.carrossel .galery {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.carrossel .galery img{
+    width: 19.9%;
+}
+
+@keyframes animacao {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+    100% { margin-left: -400%; }
+}
+</style>

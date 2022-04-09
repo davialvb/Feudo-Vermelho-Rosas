@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: todolist_db
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      vpcnet:
+        ipv4_address: 172.25.0.10
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.backend
+    depends_on:
+      - db
+    ports:
+      - 8000
+    volumes:
+      - .:/var/www
+    networks:
+      vpcnet:
+        ipv4_address: 172.25.0.11
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www
+    networks:
+      vpcnet:
+        ipv4_address: 172.25.0.12
+
+networks:
+  vpcnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
