@@ -1,9 +1,7 @@
 from django.db import models
 from django.conf import settings
+from django.core.files.storage import FileSystemStorage
 import os
-
-# def upload_image_books():
-#     return os.path.join(settings.LOCAL_FILE_DIR, 'static/home')
 
 class Post(models.Model):
     title = models.CharField(max_length=255)
@@ -11,7 +9,7 @@ class Post(models.Model):
     intro = models.TextField()
     body = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
-    image = models.FilePathField(path="blog/static/home/", blank=False, null=True)
+    image = models.FileField(upload_to='images/')
 
     class Meta:
         ordering = ['-date_added']
