@@ -9,7 +9,8 @@ class Post(models.Model):
     intro = models.TextField()
     body = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
-    image = models.FileField(upload_to='images/')
+    #image = models.FileField(upload_to='images/')
+    image = models.ImageField(null=True, blank=True, upload_to="images/")
     autor = models.CharField(max_length=255)
 
     class Meta:

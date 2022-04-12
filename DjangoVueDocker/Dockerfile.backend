@@ -3,6 +3,7 @@ FROM python:latest
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
 COPY poetry.lock pyproject.toml manage.py /app/
+VOLUME /app/blog/media/images
 
 RUN pip install poetry
 RUN poetry config virtualenvs.create false

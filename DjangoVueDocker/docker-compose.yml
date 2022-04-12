@@ -10,6 +10,7 @@ services:
     networks:
       vpcnet:
         ipv4_address: 172.25.0.10
+  
 
   backend:
     build:
@@ -21,9 +22,12 @@ services:
       - 8000
     volumes:
       - .:/var/www
+      - media:/app/blog/media
     networks:
       vpcnet:
         ipv4_address: 172.25.0.11
+
+
 
   frontend:
     build:
@@ -38,6 +42,7 @@ services:
     networks:
       vpcnet:
         ipv4_address: 172.25.0.12
+   
 
 networks:
   vpcnet:
@@ -45,3 +50,5 @@ networks:
     ipam:
       config:
         - subnet: 172.25.0.0/16
+volumes:
+  media: {}

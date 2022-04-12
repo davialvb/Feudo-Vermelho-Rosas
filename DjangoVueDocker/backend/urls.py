@@ -11,7 +11,7 @@ urlpatterns = [
     path('sobre/', recomend, name='sobre'),
     path('admin/', admin.site.urls),
     path('<slug:slug>/', post_detail, name='post_detail'),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 if settings.DEBUG:
