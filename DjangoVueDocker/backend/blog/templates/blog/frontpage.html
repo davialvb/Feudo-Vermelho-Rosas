@@ -1,17 +1,84 @@
 {% extends 'blog/base.html' %}
 
+
 {% block content %}
+
+    <div class="imghome">
+        <img src="./static/home/carrobrabo.png" alt="carrossel" >
+    </div>
+
+    <h1 class="not">Notícias</h1>
+
     {% for post in posts %}
-        <div class="post block">
-            <div style="text-align: center;" class="item1"><img style="height: 300px; width: 450px;" src="{{post.image.url}}" alt="">
-                <h2 class="subtitle">{{ post.title }}</h2>
 
-                <small>Posted at {{ post.date_added }}</small>
-
-                <p>{{ post.intro }}</p>
-
-                <a href="{% url 'post_detail' post.slug %}">Read more</a>
-            </div>
+    <div id="container">
+  
+        <div style="text-align: center;" class="item1"><img style="height: 300px; width: 450px;" src="{{post.image.url}}" alt="">
+            
+            <p class="nottema"><a style="text-decoration: none;" href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></p>
+            <p style="font-size: 18px;">{{ post.intro }}</p>
+            <p id="Autor">Bernado Borges Martins</p>
+            <p id="Data">{{ post.date_added }}</p>
+      
         </div>
+        
+      </div>
+
     {% endfor %}
+
+
+<style>
+
+.not{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 55px; 
+    font-family: Libre Baskerville; 
+    text-decoration: underline;
+}
+
+.imghome{
+    text-align: center;
+}
+
+
+p{
+  font-size: 1.15rem;
+  text-align: justify;
+  line-height: 30px;
+}
+
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 8px;
+}
+
+.item1{
+  margin: 40px;
+  width: 50%;
+}
+
+
+
+.nottema{
+  font-size: 25px;
+  margin-top: 25px;
+  
+  
+}
+
+
+#Autor,#Data{
+  color: #615d5d;
+  line-height: 10px;
+
+}
+
+</style>
+
+
 {% endblock %}
+

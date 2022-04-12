@@ -2,14 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
+        
         <nav id="menu">
             <ul>
                   <a><img style="float: left; margin-right: 25px; box-shadow: 3px 3px 3px;" src="./static/home/DesenSoft.png" alt="icone de pesquisa" class="imgpesquisa"></a>
-                  <li><a><router-link to="/">Notícias</router-link></a></li>
-                  <li><a><router-link to="/about">Recomendações</router-link></a></li>
-                  <li><a><router-link to="/sobre">Quem somos</router-link></a></li>
+                  <li><a href="{% url 'frontpage' %}" >Notícias</a></li>
+                  <li><a>Recomendações</a></li>
+                  <li><a href="{% url 'sobre' %}">Quem somos</a></li>
               </ul>
           </nav>
+          
     </head>
 
     <body>
@@ -43,7 +45,7 @@
                     </div>
                     <div class="col-md-6 item text">
                         <h3>Desensoft</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                        <p>Este blog foi criado por um grupo de estudantes de engenharia de software. Ele tem como objetivo trazer as principais notícias de ciberataques e cibersegurança ao redor do mundo.</p>
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>

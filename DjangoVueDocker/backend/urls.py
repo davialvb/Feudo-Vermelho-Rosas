@@ -3,10 +3,11 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 
-from backend.blog.views import frontpage, post_detail
+from backend.blog.views import frontpage, post_detail, recomend
 
 urlpatterns = [
     path('', frontpage, name='frontpage'),
+    path('sobre/', recomend, name='sobre'),
     path('admin/', admin.site.urls),
     path('<slug:slug>/', post_detail, name='post_detail'),
 ]

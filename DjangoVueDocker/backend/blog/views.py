@@ -8,6 +8,9 @@ def frontpage(request):
 
     return render(request, 'blog/frontpage.html', {'posts': posts})
 
+def recomend(request):
+    return render(request, 'blog/sobre.html')
+
 def post_detail(request, slug):
     post = Post.objects.get(slug=slug)
 
