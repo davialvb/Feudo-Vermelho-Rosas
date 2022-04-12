@@ -8,6 +8,9 @@ def frontpage(request):
 
     return render(request, 'blog/frontpage.html', {'posts': posts})
 
+def recomends(request):
+    return render(request, 'blog/recomend.html')
+
 def recomend(request):
     return render(request, 'blog/sobre.html')
 

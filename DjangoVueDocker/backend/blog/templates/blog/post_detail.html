@@ -1,49 +1,70 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1 class="title">{{ post.title }}</h1>
+<div class="imgnot">
+<img class="img" src="{{post.image.url}}" alt="notícia importante"><br>
+</div>
 
-    <small>Posted at {{ post.date_added }}</small>
+<div id="tudo">
+    <h1 id="Titulonoticias">{{ post.title }}</h1>
 
-    <p><strong>{{ post.intro }}</strong></p>
+    <div class="autor">
+      <p>{{ post.autor }}</p>
+    </div>
 
-    <p>{{ post.body }}</p>
+    <div class="txt">
+      <p class="texto">{{ post.body }}</p>
+    </div>
+    <p class="data">{{ post.date_added }}</p>
+</div>
 
-    <hr>
-
-    <h2 class="subtitle">Comments</h2>
 
     {% for comment in post.comments.all %}
-        <article class="media">
-            <div class="media-content">
-                <div class="content">
-                    <p>
-                        <strong>{{ comment.name }}</strong> <small>{{ comment.date_added }}</small>
-                        <br>
-                        {{ comment.body }}
-                    </p>
-                </div>
-            </div>
-        </article>
-    {% empty %}
-        <div class="notification">
-            <p>No comments yet!</p>
-        </div>
+    
+    {% empty %}   
+
+
     {% endfor %}
 
-    <hr>
+<style>
 
-    <h2 class="subtitle">Add comment</h2>
+.imgnot{
+    text-align: center;
+    margin-top: 15px;
+}
+.img{
+    width: 881px;
+    height: 495px;
+    margin-bottom: 30px;
+}
 
-    <form method="post" action=".">
-        {% csrf_token %}
+#Titulonoticias{
+margin-top: 10px; 
+font-size: 55px; 
+text-align: center; 
+font-family: Libre Baskerville; 
+text-decoration: underline;
+}
 
-        {{ form.as_p }}
+.data,.autor{
+    color: gray;
+    width: fit-content;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-        <div class="field">
-            <div class="control">
-                <button class="button is-success">Submit</button>
-            </div>
-        </div>
-    </form>
+.data{
+    margin-bottom: 70px;
+}
+
+.txt{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+
+</style>
+ 
 {% endblock %}

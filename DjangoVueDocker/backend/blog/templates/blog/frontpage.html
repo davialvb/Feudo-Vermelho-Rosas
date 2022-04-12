@@ -6,8 +6,10 @@
     <div class="imghome">
         <img src="./static/home/carrobrabo.png" alt="carrossel" >
     </div>
-
+    
+    <hr>
     <h1 class="not">Notícias</h1>
+    <hr>
 
     {% for post in posts %}
 
@@ -17,7 +19,7 @@
             
             <p class="nottema"><a style="text-decoration: none;" href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></p>
             <p style="font-size: 18px;">{{ post.intro }}</p>
-            <p id="Autor">Bernado Borges Martins</p>
+            <p id="Autor">{{ post.autor }}</p>
             <p id="Data">{{ post.date_added }}</p>
       
         </div>
@@ -66,6 +68,7 @@ p{
 .nottema{
   font-size: 25px;
   margin-top: 25px;
+  text-align: center;
   
   
 }
