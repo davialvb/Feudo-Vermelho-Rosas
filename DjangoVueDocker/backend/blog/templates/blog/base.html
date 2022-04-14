@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,7 +6,8 @@
         
         <nav id="menu">
             <ul>
-                  <a><img style="float: left; margin-right: 25px; box-shadow: 3px 3px 3px;" src="./static/home/DesenSoft.png" alt="icone de pesquisa" class="imgpesquisa"></a>
+              {% load static %}
+                  <a><img style="float: left; margin-right: 25px; box-shadow: 3px 3px 3px;" src ="{% static 'home/DesenSoft.png' %}" alt="icone de pesquisa" class="imgpesquisa"></a>
                   <li><a href="{% url 'frontpage' %}" >Notícias</a></li>
                   <li><a href="{% url 'recomend' %}">Recomendações</a></li>
                   <li><a href="{% url 'sobre' %}">Quem somos</a></li>
