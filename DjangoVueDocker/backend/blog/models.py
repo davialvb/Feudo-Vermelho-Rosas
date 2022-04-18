@@ -8,6 +8,8 @@ class Post(models.Model):
     slug = models.SlugField()
     intro = models.TextField()
     body = models.TextField()
+    body2 = models.TextField()
+    body3 = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
     #image = models.FileField(upload_to='images/')
     image = models.ImageField(null=True, blank=True, upload_to="images/")
